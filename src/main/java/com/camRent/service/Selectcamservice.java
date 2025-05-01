@@ -1,8 +1,7 @@
 package com.camRent.service;
 
+import com.camRent.ResponseCam.ResponseCam;
 import com.camRent.model.SelectCammodel;
-
-import ResponseCam.ResponseCam;
 
 public interface Selectcamservice {
 
@@ -10,7 +9,7 @@ public interface Selectcamservice {
 
 	 ResponseCam getAllModels();
 
-	 ResponseCam getByCamId(Integer camId);
+	 ResponseCam getCamId(Integer camId);
 
 	//void getByCamId(Integer camId);
 	}

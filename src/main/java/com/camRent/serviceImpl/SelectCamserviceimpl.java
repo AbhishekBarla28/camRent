@@ -9,7 +9,7 @@ import com.camRent.dao.SelectCamdao;
 import com.camRent.model.SelectCammodel;
 import com.camRent.service.Selectcamservice;
 
-import ResponseCam.ResponseCam;
+import com.camRent.ResponseCam.ResponseCam;
 
 @Service
 public class SelectCamserviceimpl implements Selectcamservice {
@@ -36,7 +36,7 @@ public class SelectCamserviceimpl implements Selectcamservice {
 	}
 
 	@Override
-	public ResponseCam getByCamId(Integer camId) {
+	public ResponseCam getCamId(Integer camId) {
 		// TODO Auto-generated method stub
 		ResponseCam ResponseCam=new ResponseCam();
 		List<SelectCammodel> getCam=selectCamdao.findBycamId(camId);

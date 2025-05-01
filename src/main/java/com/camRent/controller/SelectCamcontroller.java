@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.camRent.ResponseCam.ResponseCam;
 import com.camRent.model.SelectCammodel;
 import com.camRent.service.Selectcamservice;
-
-import ResponseCam.ResponseCam;
 
 @RestController
 @RequestMapping("/camera")
@@ -33,7 +32,7 @@ public class SelectCamcontroller {
     
     @GetMapping("get")
     public ResponseCam getByCamId(@RequestParam Integer camId ) {
-    	return selectcamservice.getByCamId(camId);
+    	return selectcamservice.getCamId(camId);
     }
 
 

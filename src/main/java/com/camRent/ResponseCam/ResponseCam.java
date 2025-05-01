@@ -1,4 +1,4 @@
-package ResponseCam;
+package com.camRent.ResponseCam;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;
